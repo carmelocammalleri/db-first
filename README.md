@@ -15,7 +15,7 @@ displacement: SMALLINT - NOT NULL;
 horse_power: SMALLINT - NOT NULL;  
 fuelling: VARCHAR(20) - NOT NULL;  
 transmission: VARCHAR(5) - NOT NULL;  
-year: YEAR - NOT NULL;
+year: YEAR - NOT NULL;  
 license_plate
 km
 tank_capacity
