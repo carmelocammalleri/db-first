@@ -16,26 +16,24 @@ horse_power: SMALLINT - NOT NULL;
 fuelling: VARCHAR(20) - NOT NULL;  
 transmission: VARCHAR(5) - NOT NULL;  
 year: YEAR - NOT NULL;  
-license_plate
-km
-tank_capacity
-doors
-seats
-trunk_capacity
-height
-width
-length
-alloy_wheel
-air_conditioning
-battery
-rear_view_camera
-sensor
-abs
-cruise_control
-external_color
-internal_color
-accessory
-radio
-display
-condition
-price
+license_plate: CHAR(7) - NOT NULL - UNIQUE;   
+km: MEDIUMINT - NOT NULL;  
+tank_capacity: TINYINT UNSIGNED - NULL;  
+doors: TINYINT (20) - NULL;  
+seats: TYNYINT - NOT NULL;  
+trunk_capacity: TINYINT UNSIGNED - NULL;  
+height: DOUBLE (4, 2) - NULL;   
+width: DOUBLE (4, 2) - NULL;   
+length: DOUBLE (4, 2) - NULL;   
+alloy_wheel: CHAR(1) - DEFAULT ('0') - NULL;  
+air_conditioning: CHAR(1) - DEFAULT ('0') - NULL;  
+rear_view_camera: CHAR(1) - DEFAULT ('0') - NULL;  
+sensor: CHAR(1) - DEFAULT ('0') - NULL;  
+abs: CHAR(1) - DEFAULT ('0') - NULL;  
+cruise_control: CHAR(1) - DEFAULT ('0') - NULL;  
+external_color: VARCHAR(20) - NOT NULL;  
+internal_color: VARCHAR(15) - NULL;  
+radio: CHAR(1) - DEFAULT ('0') - NULL;  
+display: CHAR(1) - DEFAULT ('0') - NULL;  
+condition: VARCHAR(15) - NOT NULL;  
+price: INT - NOT NULL;
