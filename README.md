@@ -16,7 +16,7 @@ horse_power: SMALLINT - NOT NULL;
 fuelling: VARCHAR(20) - NOT NULL;  
 transmission: VARCHAR(5) - NOT NULL;  
 year: YEAR - NOT NULL;  
-license_plate: CHAR(7) - NOT NULL - UNIQUE;   
+license_plate: VARCHAR(7) - NOT NULL - UNIQUE;   
 km: MEDIUMINT - NOT NULL;  
 tank_capacity: TINYINT UNSIGNED - NULL;  
 doors: TINYINT (20) - NULL;  
